@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import AirbnbExperience from "./components/AirbnbExperience";
+import Footer from "./components/Footer";
+import GiftCard from "./components/GiftCard";
+import HomePage from "./components/HomePage";
+import MobileNavBar from "./components/MobileNavBar";
+import NavBar from "./components/NavBar";
+import QAHosting from "./components/QAHosting";
+import TripLocation from "./components/TripLocation";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar />
+      <MobileNavBar />
+      <HomePage />
+      <TripLocation />
+      <AirbnbExperience />
+      <GiftCard />
+      <QAHosting />
+      <Footer />
     </div>
   );
 }

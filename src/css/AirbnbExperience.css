@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+:root {
+  --airbnb: #ff385c;
+  --white: #ffffff;
+  --popins: "Poppins", sans-serif;
+  --shadow: 0 4px 8px 0 rgba(255, 247, 247, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.airbnb-experience-container {
+  padding: 0vh 10vw 5vh 10vw;
+  height: auto;
+}
+.airbnb-experience-heading-text {
+  padding: 50px 0px;
+  font-size: 45px;
+  font-family: var(--popins);
+}
+.airbnb-experience-image-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.airbnb-experience-image-box-first {
+  width: 39vw;
+  height: 60vh;
+  position: relative;
+}
+.airbnb-experience-image-box-second {
+  width: 39vw;
+  height: 60vh;
+  position: relative;
+}
+.airbnb-experience-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.airbnb-experience-image-heading-box {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  padding: 8vh;
+}
+.airbnb-experience-image-heading {
+  color: white;
+  font-size: 3.5vw;
+  font-family: var(--popins);
+}
+.airbnb-experience-image-btn {
+  background-color: white;
+  color: black;
+  font-size: 40px;
+  padding: 16px 32px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (min-width: 2001px) {
+  .airbnb-experience-container {
+    padding: 0vh 10vw;
+  }
+  .airbnb-experience-heading-text {
+    font-size: 35px;
+  }
+  .airbnb-experience-image-box-first {
+    width: 39vw;
+    height: 90vh;
+  }
+  .airbnb-experience-image-box-second {
+    width: 39vw;
+    height: 90vh;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2000px) {
+  .airbnb-experience-heading-text {
+    font-size: 30px;
+  }
+  .airbnb-experience-image-box-first {
+    width: 43vw;
+    height: 95vh;
+  }
+  .airbnb-experience-image-box-second {
+    width: 43vw;
+    height: 95vh;
+  }
+  .airbnb-experience-image-btn {
+    font-size: 20px;
+  }
+  .airbnb-experience-container {
+    padding: 0vh 6vw;
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .airbnb-experience-container {
+    padding: 0vh 5vw;
+    height: auto;
+  }
+  .airbnb-experience-heading-text {
+    padding: 25px 0px;
+    font-size: 25px;
+  }
+  .airbnb-experience-image-box-first {
+    width: 43.5vw;
+    height: 90vh;
+  }
+  .airbnb-experience-image-box-second {
+    width: 43.5vw;
+    height: 90vh;
+  }
+  .airbnb-experience-image-btn {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .airbnb-experience-container {
+    padding: 0vh 3vw;
+    height: auto;
+  }
+  .airbnb-experience-heading-text {
+    padding: 25px 0px;
+    font-size: 22px;
+  }
+  .airbnb-experience-image-box-first {
+    width: 46vw;
+    height: 70vh;
+  }
+  .airbnb-experience-image-box-second {
+    width: 46vw;
+    height: 70vh;
+  }
+  .airbnb-experience-image-btn {
+    font-size: 18px;
+    padding: 13px 26px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .airbnb-experience-container {
+    padding: 0vh 3vw;
+    height: auto;
+  }
+  .airbnb-experience-heading-text {
+    padding: 25px 0px;
+    font-size: 22px;
+  }
+  .airbnb-experience-image-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .airbnb-experience-image-box-first {
+    width: 95vw;
+    height: 85vh;
+    margin-bottom: 15px;
+  }
+  .airbnb-experience-image-box-second {
+    width: 95vw;
+    height: 85vh;
+  }
+  .airbnb-experience-image {
+    border-radius: 0px;
+  }
+  .airbnb-experience-image-btn {
+    font-size: 18px;
+    padding: 13px 26px;
+  }
+  .airbnb-experience-image-heading {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+  .airbnb-experience-container {
+    padding: 0vh 3vw;
+    height: auto;
+  }
+  .airbnb-experience-heading-text {
+    padding: 25px 0px;
+    font-size: 22px;
+  }
+  .airbnb-experience-image-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .airbnb-experience-image-box-first {
+    width: 95vw;
+    height: 85vh;
+    margin-bottom: 15px;
+  }
+  .airbnb-experience-image-box-second {
+    width: 95vw;
+    height: 85vh;
+  }
+  .airbnb-experience-image {
+    border-radius: 0px;
+  }
+  .airbnb-experience-image-btn {
+    font-size: 18px;
+    padding: 13px 26px;
+  }
+  .airbnb-experience-image-heading {
+    font-size: 36px;
+  }
+}

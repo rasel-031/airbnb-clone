@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+:root {
+  --airbnb: #ff385c;
+  --white: #ffffff;
+  --popins: "Poppins", sans-serif;
+  --shadow: 0 4px 8px 0 rgba(255, 247, 247, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.gift-card-container {
+  padding: 12vh 5vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gift-card-heading-box {
+  width: 20vw;
+}
+.gift-card-text {
+  font-size: 50px;
+  font-family: var(--popins);
+  font-weight: 1000;
+  padding: 0;
+  margin: 0;
+}
+.gift-card-btn {
+  font-size: 20px;
+  padding: 18px 36px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+}
+.gift-card-box {
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.gift-card-inside-img-1 {
+  width: 460px;
+  height: 290px;
+  transform: translate(140px, -30px) rotate(-2deg);
+  position: relative;
+  z-index: 3;
+}
+.gift-card-inside-img-2 {
+  width: 460px;
+  height: 290px;
+  transform: translate(0px, 80px) rotate(-12deg);
+  position: relative;
+  z-index: 2;
+}
+.gift-card-inside-img-3 {
+  width: 460px;
+  height: 290px;
+  transform: translate(-75px, 50px) rotate(20deg);
+}
+
+/* Responsive */
+@media (min-width: 2001px) {
+  .gift-card-container {
+    padding: 20vh 10vw;
+    height: 84vh;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2000px) {
+  .gift-card-container {
+    padding: 20vh 6vw;
+    height: 84vh;
+  }
+  .gift-card-heading-box {
+    width: 21vw;
+  }
+  .gift-card-inside-img-1 {
+    width: 375px;
+    height: 200px;
+  }
+  .gift-card-inside-img-2 {
+    width: 375px;
+    height: 200px;
+  }
+  .gift-card-inside-img-3 {
+    width: 375px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .gift-card-container {
+    padding: 12vh 5vw;
+  }
+  .gift-card-box {
+    width: 70vw;
+  }
+  .gift-card-text {
+    font-size: 35px;
+  }
+  .gift-card-btn {
+    font-size: 16px;
+    padding: 14px 28px;
+  }
+  .gift-card-inside-img-1 {
+    width: 375px;
+    height: 170px;
+  }
+  .gift-card-inside-img-2 {
+    width: 375px;
+    height: 170px;
+  }
+  .gift-card-inside-img-3 {
+    width: 375px;
+    height: 170px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .gift-card-box {
+    width: 70vw;
+  }
+  .gift-card-text {
+    font-size: 25px;
+  }
+  .gift-card-btn {
+    font-size: 14px;
+    padding: 14px 28px;
+  }
+  .gift-card-inside-img-1 {
+    width: 375px;
+    height: 150px;
+  }
+  .gift-card-inside-img-2 {
+    width: 375px;
+    height: 150px;
+  }
+  .gift-card-inside-img-3 {
+    width: 375px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .gift-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12vh 3vw;
+  }
+  .gift-card-box {
+    margin-top: 25px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+  .gift-card-box,
+  .gift-card-inside-img-1,
+  .gift-card-inside-img-2,
+  .gift-card-inside-img-3 {
+    width: 100%;
+  }
+  .gift-card-box::-webkit-scrollbar {
+    width: 0px;
+  }
+  .gift-card-heading-box {
+    width: 100%;
+  }
+  .gift-card-text {
+    font-size: 25px;
+  }
+  .gift-card-btn {
+    font-size: 14px;
+    padding: 14px 28px;
+  }
+  .gift-card-inside-img-1 {
+    width: 250px;
+    height: 150px;
+    transform: translate(0, 0) rotate(0deg);
+  }
+  .gift-card-inside-img-2 {
+    width: 250px;
+    height: 150px;
+    transform: translate(0, 0) rotate(0deg);
+  }
+  .gift-card-inside-img-3 {
+    width: 250px;
+    height: 150px;
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+  .gift-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12vh 3vw;
+  }
+  .gift-card-box {
+    margin-top: 25px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+  }
+  .gift-card-box,
+  .gift-card-inside-img-1,
+  .gift-card-inside-img-2,
+  .gift-card-inside-img-3 {
+    width: 100%;
+  }
+  .gift-card-box::-webkit-scrollbar {
+    width: 0px;
+  }
+  .gift-card-heading-box {
+    width: 100%;
+  }
+  .gift-card-text {
+    font-size: 25px;
+  }
+  .gift-card-btn {
+    font-size: 14px;
+    padding: 14px 28px;
+  }
+  .gift-card-inside-img-1 {
+    width: 250px;
+    height: 150px;
+    transform: translate(0, 0) rotate(0deg);
+  }
+  .gift-card-inside-img-2 {
+    width: 250px;
+    height: 150px;
+    transform: translate(0, 0) rotate(0deg);
+  }
+  .gift-card-inside-img-3 {
+    width: 250px;
+    height: 150px;
+    transform: translate(0, 0) rotate(0deg);
+  }
+}

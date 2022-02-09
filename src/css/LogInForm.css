@@ -1,0 +1,124 @@
+/* toast */
+
+.toastify {
+  margin: 100px 0px 0px 10px;
+}
+
+/* toast */
+
+.login-container {
+  display: none;
+}
+.login-overlay-on {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(155, 155, 155, 0.5);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: -1;
+}
+
+.login-box {
+  width: 300px;
+  height: 275px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  position: fixed;
+  animation: overlay 2s;
+}
+@keyframes overlay {
+  from {
+    transform: translate(0%, 150%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+.login-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.login-cancle-btn {
+  width: 38px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+.login-cancle-btn:hover {
+  background-color: red;
+  color: #fff;
+}
+.login-heading-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+.login-form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 15px 0px; */
+}
+.login-form-password-box {
+  position: relative;
+  margin: 20px 0px;
+}
+.login-form-pass-eye {
+  position: absolute;
+  right: 4px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.login-form-input {
+  padding: 10px 20px;
+}
+.login-form-submit-btn {
+  border: 2px solid black;
+  padding: 8px 30px;
+  border-radius: 20px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.login-form-submit-btn:hover {
+  color: white;
+  background-color: rgb(15, 173, 55);
+  border: 2px solid rgb(15, 173, 55);
+}
+
+/* Responsive */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .login-container {
+    display: none;
+  }
+  .login-overlay-on {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(199, 199, 199, 0.5);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 20;
+  }
+  .login-box {
+    width: 300px;
+    height: 275px;
+    margin-bottom: 160px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    position: fixed;
+    animation: overlay 2s;
+  }
+}

@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+:root {
+  --airbnb: #ff385c;
+  --white: #ffffff;
+  --popins: "Poppins", sans-serif;
+  --shadow: 0 4px 8px 0 rgba(255, 247, 247, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.qahosting-container {
+  padding: 0vh 10vw;
+  width: 100%;
+  position: relative;
+}
+.qahosting-img {
+  max-height: 1000px;
+  width: 100%;
+  border-radius: 10px;
+}
+.qahosting-heading-box {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+}
+.qahosting-heading-text {
+  color: white;
+  font-size: 5rem;
+  font-family: var(--popins);
+}
+.qahosting-heading-btn {
+  font-size: 1.5rem;
+  padding: 14px 24px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive */
+
+@media (min-width: 1440px) and (max-width: 2000px) {
+  .qahosting-container {
+    padding: 0vh 6vw;
+  }
+  .qahosting-img {
+    max-height: 800px;
+  }
+  .qahosting-heading-text {
+    font-size: 4rem;
+  }
+  .qahosting-heading-btn {
+    font-size: 1.2rem;
+    padding: 14px 24px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .qahosting-container {
+    padding: 0;
+    margin-top: 12vh;
+  }
+  .qahosting-heading-text {
+    font-size: 2.5rem;
+  }
+  .qahosting-heading-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+  .qahosting-img {
+    max-height: 600px;
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .qahosting-container {
+    padding: 0;
+    margin-top: 12vh;
+  }
+  .qahosting-heading-text {
+    font-size: 2rem;
+  }
+  .qahosting-heading-btn {
+    font-size: 0.6rem;
+    padding: 8px 16px;
+  }
+  .qahosting-img {
+    max-height: 600px;
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .qahosting-container {
+    padding: 0;
+    margin-top: 0vh;
+  }
+  .qahosting-heading-text {
+    font-size: 1.3rem;
+  }
+  .qahosting-heading-btn {
+    font-size: 0.5rem;
+    padding: 8px 16px;
+  }
+  .qahosting-img {
+    max-height: 350px;
+    border-radius: 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+  .qahosting-container {
+    padding: 0;
+    margin-top: 0vh;
+  }
+  .qahosting-heading-text {
+    font-size: 0.8rem;
+  }
+  .qahosting-heading-btn {
+    font-size: 0.3rem;
+    padding: 6px 12px;
+  }
+  .qahosting-img {
+    max-height: 350px;
+    border-radius: 0px;
+  }
+}
